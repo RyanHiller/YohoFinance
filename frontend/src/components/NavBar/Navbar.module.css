@@ -1,0 +1,39 @@
+.NavBar {
+  align-items: center;
+  background-image: linear-gradient(to bottom,#fff,#ebe8ef);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+}
+
+.NavBar > * {
+  height: 3rem;
+}
+
+.NavTop {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  width: 60%;
+}
+
+.NavLogo {
+  max-height: 2rem;
+  width: auto;
+}
+
+.NavBottom {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.NavBottom:hover nav a {
+  color: #5b636a;
+  transition: 0.2s;
+}

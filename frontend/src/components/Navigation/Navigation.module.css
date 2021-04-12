@@ -1,0 +1,25 @@
+.Navigation {
+  height: 100%;
+  width: 100%;
+}
+
+.NavList {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 80%;
+}
+
+.Item:hover a {
+  color: #070f6c !important;
+  transition: 0.2s;
+}
+
+.Item a {
+  color: #070f6c;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-decoration: none;
+}
