@@ -19,10 +19,21 @@ app.get('/', (req, res) => {
  */
 app.get('/api/indices', (req, res, next) => {
   const SYMBOLS = ['^GSPC', '^DJI', '^IXIC', '^RUT', 'BTC-USD', 'EURUSD=X', 'GC=F'];
-  yf.quote({symbols: SYMBOLS, module: 'price'}, function(err, quote) {
+  yf.quote({symbols: SYMBOLS}, function(err, quote) {
     if (err) next(err);
     else res.json(quote);
   })
+})
+
+/**
+ * URL: localhost:3333/api/quote
+ * Description: Returns JSON data for specific ticker
+ */
+app.get('/api/quote', (req, res, next) => {
+  req.query.input ? yf.quote({symbol: req.query.input}, function(err, quote) {
+    if (err) next(err);
+    else res.json(quote);
+  }) : null;
 })
 
 // Handle 404 redirect
