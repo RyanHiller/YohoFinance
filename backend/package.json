@@ -4,12 +4,13 @@
   "description": "API using a python script to fetch data for Yoho Finance, a Yahoo! Finance clone for educational purposes",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon --delay 500ms server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ryan Hiller <allamericanslacker@gmail.com> (https://ryanhiller.dev/)",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "yahoo-finance": "^0.3.7"
   },
