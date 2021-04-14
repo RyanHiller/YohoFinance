@@ -1,0 +1,7 @@
+.App {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  text-rendering: optimizeLegibility;
+}

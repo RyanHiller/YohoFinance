@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Navigation.module.css';
 
@@ -7,7 +8,7 @@ export default function Navigation() {
     <nav className={styles.Navigation}>
       <ul className={styles.NavList}>
         <li className={styles.Item}>
-          <a href='#'>Finance Home</a>
+          <Link to='/'>Finance Home</Link>
         </li>
         <li className={styles.Item}>
           <a href='#'>Watchlists</a>
