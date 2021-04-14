@@ -1,6 +1,6 @@
 body {
-  font-family: sans-serif;
-  font-size: 16px;
+  font-family: 'Yahoo Sans Financial', 'Helvetica Neue', Helvetica ,Arial, sans-serif;
+  font-size: 13px;
   margin: 0;
   padding: 0;
 }
@@ -8,4 +8,28 @@ body {
 body * {
   margin: 0;
   padding: 0;
+}
+
+@font-face {
+  font-family: 'Yahoo Sans Financial';
+  font-weight: 400;
+  src: local('Yahoo Sans Financial'), url(./fonts/YahooSansFinancial-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Yahoo Sans Financial';
+  font-weight: 500;
+  src: local('Yahoo Sans Financial'), url(./fonts/YahooSansFinancial-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Yahoo Sans Financial';
+  font-weight: 600;
+  src: local('Yahoo Sans Financial'), url(./fonts/YahooSansFinancial-Semibold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Yahoo Sans Financial';
+  font-weight: 700;
+  src: local('Yahoo Sans Financial'), url(./fonts/YahooSansFinancial-Bold.woff2) format('woff2');
 }
