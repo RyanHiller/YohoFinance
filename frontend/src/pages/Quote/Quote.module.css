@@ -1,0 +1,5 @@
+.Quote {
+  display: flex;
+  justify-content: flex-start;
+  width: 63%;
+}

@@ -1,0 +1,59 @@
+.QuoteHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.QuoteHeader > * {
+  margin: 0.5rem;
+}
+
+.QuoteHRule {
+  border-top-width: 7px;
+  border-top-style: solid;
+  margin: 0;
+  width: 100%;
+}
+
+.Positive {
+  color: #00873c;
+  border-top-color: #00873c;
+}
+
+.Negative {
+  color: #eb0f29;
+  border-top-color: #eb0f29;
+}
+
+.Details {
+  margin: 0.5rem 0;
+}
+
+.Name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.Exchange {
+  color: #5b636a;
+  font-size: 0.75rem;
+}
+
+.Pricing {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.RegularMarket {
+  align-items: flex-end;
+  display: flex;
+}
+
+.RMPrice {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.Change {
+
+}
