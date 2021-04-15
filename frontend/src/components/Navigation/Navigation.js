@@ -11,28 +11,28 @@ export default function Navigation() {
           <Link to='/'>Finance Home</Link>
         </li>
         <li className={styles.Item}>
-          <a href='#'>Watchlists</a>
+          <Link to='/'>Watchlists</Link>
         </li>
         <li className={styles.Item}>
-          <a href='#'>My Portfolio</a>
+          <Link to='/'>My Portfolio</Link>
         </li>
         <li className={styles.Item}>
-          <a href='#'>Screeners</a>
+          <Link to='/'>Screeners</Link>
         </li>
         <li className={styles.Item}>
-          <a href='#'>Yoho Finance Plus</a>
+          <Link to='/'>Yoho Finance Plus</Link>
         </li>
         <li className={styles.Item}>
-          <a href='#'>Markets</a>
+          <Link to='/'>Markets</Link>
         </li>
         <li className={styles.Item}>
-          <a href='#'>News</a>
+          <Link to='/'>News</Link>
         </li>
         <li className={styles.Item}>
-          <a href='#'>Personal Finance</a>
+          <Link to='/'>Personal Finance</Link>
         </li>
         <li className={styles.Item}>
-          <a href='#'>Videos</a>
+          <Link to='/'>Videos</Link>
         </li>
       </ul>
     </nav>

@@ -13,7 +13,7 @@ export default function NavBar() {
       <div className={styles.NavTop}>
         <img className={styles.NavLogo} src={NavLogo} alt='Yoho Finance Logo' />
         <SearchBar />
-        <div>{/* Auth ?*/}</div>
+        <div className={styles.NavAuth}>{/* Auth ?*/}</div>
       </div>
       <div className={styles.NavBottom}>
         <Navigation />

@@ -12,14 +12,14 @@
 }
 
 .NavBar > * {
-  height: 3rem;
+  height: 2.2rem;
 }
 
 .NavTop {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
-  width: 60%;
+  width: 63%;
 }
 
 .NavLogo {
@@ -27,11 +27,15 @@
   width: auto;
 }
 
+.NavAuth {
+  width: 15rem;
+}
+
 .NavBottom {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 63%;
 }
 
 .NavBottom:hover nav a {
