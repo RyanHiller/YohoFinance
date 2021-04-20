@@ -16,13 +16,13 @@
 }
 
 .Positive {
-  color: #00873c;
-  border-top-color: #00873c;
+  color: var(--positiveColor);
+  border-top-color: var(--positiveColor);
 }
 
 .Negative {
-  color: #eb0f29;
-  border-top-color: #eb0f29;
+  color: var(--negativeColor);
+  border-top-color: var(--negativeColor);
 }
 
 .Details {
@@ -35,7 +35,7 @@
 }
 
 .Exchange {
-  color: #5b636a;
+  color: var(--tertiaryColor);
   font-size: 0.75rem;
 }
 
@@ -66,4 +66,5 @@
 
 .RMChange {
   font-size: 1.5rem;
+  font-weight: 500;
 }
