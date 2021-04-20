@@ -3,15 +3,28 @@ import React, { useEffect } from 'react';
 import styles from './QuoteHeader.module.css';
 
 export default function QuoteHeader(props) {
-  let rmColor, currentMarket;
+  let rmChange, rmColor, rmPercent, rmPrice, rmSign, currentMarket;
 
-  React.useEffect(determineMarket, [])
+  React.useEffect(determineMarket, []);
 
   // Set horizontal rule's and change information's color
   if (props.ticker.regularMarketChange > 0) {
     rmColor = styles.Positive;
+    rmSign = '+';
   } else if (props.ticker.regularMarketChange < 0) {
     rmColor = styles.Negative;
+    rmSign = '';
+  }
+
+  // Format price length
+  if (props.ticker.regularMarketPrice > 0.01) {
+    rmChange = props.ticker.regularMarketChange.toFixed(2);
+    rmPercent = props.ticker.regularMarketChangePercent * 100;
+    rmPercent = rmPercent.toFixed(2);
+    rmPrice = props.ticker.regularMarketPrice.toFixed(2);
+  } else {
+    rmChange = props.ticker.regularMarketChange.toFixed(4);
+    rmPrice = props.ticker.regularMarketPrice.toFixed(4);
   }
 
   // Determine Premarket/Regular Market/After Hours
@@ -65,13 +78,18 @@ export default function QuoteHeader(props) {
       </div>
       <div className={styles.Pricing}>
         <div className={styles.RegularMarket}>
-          <div className={styles.RMPrice}>{props.ticker.regularMarketPrice.toFixed(2)}</div>
-          <div className={`${styles.RMChange} ${rmColor}`}>
-            {props.ticker.regularMarketChange.toFixed(2)}
+          <div className={styles.RMPriceContainer}>
+            <div className={styles.RMPrice}>{rmPrice}</div>
+            <div className={`${styles.RMChange} ${rmColor}`}>
+              {rmSign}
+              {rmChange}
+            </div>
+            <div className={`${styles.RMChange} ${rmColor}`}>
+              ({rmSign}
+              {rmPercent}%)
+            </div>
           </div>
-          <div className={`${styles.RMChangePercent} ${rmColor}`}>
-            {props.ticker.regularMarketChangePercent.toFixed(2)}
-          </div>
+          <div className={styles.RMNotice}></div>
         </div>
         <div className={styles.PostPreMarket}>{}</div>
       </div>

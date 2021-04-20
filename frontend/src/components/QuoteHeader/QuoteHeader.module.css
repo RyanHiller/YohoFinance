@@ -45,15 +45,25 @@
 }
 
 .RegularMarket {
+  display: flex;
+  flex-direction: column;
+}
+
+.RMPriceContainer {
   align-items: flex-end;
   display: flex;
+}
+
+.RMPriceContainer > * {
+  margin-right: 0.5rem;
 }
 
 .RMPrice {
   font-size: 2.5rem;
   font-weight: 700;
+  line-height: 2.5rem;
 }
 
-.Change {
-
+.RMChange {
+  font-size: 1.5rem;
 }
